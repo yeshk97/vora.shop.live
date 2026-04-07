@@ -8,11 +8,24 @@ An affiliate deals aggregator showcasing curated aesthetic products for the Indi
 - Google Fonts: Cormorant Garamond (headings), DM Sans (body)
 - GitHub Pages for hosting
 
-## Key Files
-- `index.html` - Main HTML structure
-- `css/style.css` - All styles
-- `js/deals.js` - Product data array with affiliate links
-- `js/app.js` - Filtering, sorting, and rendering logic
+## Project Structure
+```
+vora.shop.live/
+├── index.html          # Main HTML (entry point for GitHub Pages)
+├── css/
+│   └── style.css       # All styles
+├── js/
+│   ├── app.js          # Logic (filters, sorting, rendering)
+│   └── deals.js        # Product data array
+├── assets/
+│   └── images/         # Future: local images
+├── docs/               # Documentation
+├── AGENTS.md           # AI context (read by opencode)
+├── CHANGELOG.md        # Version history
+├── README.md
+├── .gitignore
+└── LICENSE
+```
 
 ## Product Data Structure (in js/deals.js)
 Each product has: id, title, price, originalPrice, discount, image, category, store, affiliateLink, badge
@@ -27,9 +40,8 @@ Each product has: id, title, price, originalPrice, discount, image, category, st
 ## GitHub Pages
 - Repository: https://github.com/yeshk97/vora.shop.live
 - Live site: https://yeshk97.github.io/vora.shop.live/
-- Or redirect custom domain shop.vora.live to this repo
 
-## Workflow
+## Git Workflow
 1. Make changes locally
 2. `git add .`
 3. `git commit -m "description"`
@@ -37,9 +49,9 @@ Each product has: id, title, price, originalPrice, discount, image, category, st
 5. Auto-deploys to GitHub Pages (2-3 min)
 
 ## Future Plans (TODO)
-- Add more products to deals.js
-- Improve mobile responsiveness
-- Add product detail pages
-- Newsletter signup
-- Social sharing features
-- Analytics integration
+- [ ] Add more products to deals.js
+- [ ] Improve mobile responsiveness
+- [ ] Add product detail pages
+- [ ] Newsletter signup
+- [ ] Social sharing features
+- [ ] Analytics integration
