@@ -1,13 +1,10 @@
-// Add your affiliate deals here - Copy the format and paste your links
-// URL should be your affiliate link (Amazon/Flipkart)
-
 const deals = [
     {
         id: 1,
-        title: "Minimalist Wooden Desk Organizer",
+        title: "Minimalist Wooden Desk Organizer with Drawers",
         image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop",
         store: "Amazon.in",
-        url: "YOUR_AFFILIATE_LINK_HERE",
+        url: "https://amazon.in",
         currentPrice: 599,
         originalPrice: 999,
         votes: 89,
@@ -19,7 +16,7 @@ const deals = [
         title: "LED Ring Light with Tripod Stand (10 inch)",
         image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&h=400&fit=crop",
         store: "Flipkart",
-        url: "YOUR_AFFILIATE_LINK_HERE",
+        url: "https://flipkart.com",
         currentPrice: 449,
         originalPrice: 899,
         votes: 156,
@@ -31,7 +28,7 @@ const deals = [
         title: "Aesthetic Ceramic Mug Set (Pack of 2)",
         image: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&h=400&fit=crop",
         store: "Amazon.in",
-        url: "YOUR_AFFILIATE_LINK_HERE",
+        url: "https://amazon.in",
         currentPrice: 299,
         originalPrice: 599,
         votes: 67,
@@ -43,7 +40,7 @@ const deals = [
         title: "Wireless Mechanical Keyboard (RGB Backlit)",
         image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=600&h=400&fit=crop",
         store: "Amazon.in",
-        url: "YOUR_AFFILIATE_LINK_HERE",
+        url: "https://amazon.in",
         currentPrice: 1299,
         originalPrice: 2499,
         votes: 234,
@@ -54,7 +51,7 @@ const deals = [
         title: "Minimalist Watch - Tan Leather Strap",
         image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600&h=400&fit=crop",
         store: "Flipkart",
-        url: "YOUR_AFFILIATE_LINK_HERE",
+        url: "https://flipkart.com",
         currentPrice: 899,
         originalPrice: 1799,
         votes: 112,
@@ -66,7 +63,7 @@ const deals = [
         title: "Succulent Plant Set (Set of 3) with Pots",
         image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&h=400&fit=crop",
         store: "Amazon.in",
-        url: "YOUR_AFFILIATE_LINK_HERE",
+        url: "https://amazon.in",
         currentPrice: 349,
         originalPrice: 699,
         votes: 78,
@@ -77,7 +74,7 @@ const deals = [
         title: "Noise Cancelling Earbuds (Budget Pick)",
         image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&h=400&fit=crop",
         store: "Flipkart",
-        url: "YOUR_AFFILIATE_LINK_HERE",
+        url: "https://flipkart.com",
         currentPrice: 999,
         originalPrice: 2499,
         votes: 445,
@@ -89,14 +86,56 @@ const deals = [
         title: "Aesthetic Wall Mirror (Moon Shape)",
         image: "https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&h=400&fit=crop",
         store: "Amazon.in",
-        url: "YOUR_AFFILIATE_LINK_HERE",
+        url: "https://amazon.in",
         currentPrice: 799,
         originalPrice: 1499,
         votes: 134,
         category: "home"
+    },
+    {
+        id: 9,
+        title: "Bamboo Laptop Stand with USB Port",
+        image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&h=400&fit=crop",
+        store: "Amazon.in",
+        url: "https://amazon.in",
+        currentPrice: 699,
+        originalPrice: 1299,
+        votes: 98,
+        category: "tech",
+        badge: "New"
+    },
+    {
+        id: 10,
+        title: "Scented Soy Candle Set (Pack of 4)",
+        image: "https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=600&h=400&fit=crop",
+        store: "Flipkart",
+        url: "https://flipkart.com",
+        currentPrice: 399,
+        originalPrice: 799,
+        votes: 156,
+        category: "home"
+    },
+    {
+        id: 11,
+        title: "Minimalist Gold-Plated Necklace",
+        image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=400&fit=crop",
+        store: "Amazon.in",
+        url: "https://amazon.in",
+        currentPrice: 499,
+        originalPrice: 999,
+        votes: 87,
+        category: "fashion"
+    },
+    {
+        id: 12,
+        title: "Wireless Mouse (Silent Click)",
+        image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&h=400&fit=crop",
+        store: "Flipkart",
+        url: "https://flipkart.com",
+        currentPrice: 599,
+        originalPrice: 1199,
+        votes: 203,
+        category: "tech",
+        badge: "Hot"
     }
 ];
-
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = deals;
-}
