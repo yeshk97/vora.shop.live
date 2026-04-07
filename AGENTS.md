@@ -1,57 +1,74 @@
 # VORA.shop.live - Project Context
 
 ## What is this project?
-An affiliate deals aggregator showcasing curated aesthetic products for the Indian market. Products are sourced from Amazon.in and Flipkart with affiliate links.
+An affiliate deals aggregator for Instagram traffic. Mobile-first site showcasing curated aesthetic products (under ₹1000) from Amazon.in and Flipkart. Optimized for bio links.
 
 ## Tech Stack
 - Pure HTML, CSS, JavaScript (no frameworks)
-- Google Fonts: Cormorant Garamond (headings), DM Sans (body)
-- GitHub Pages for hosting
+- Google Font: DM Sans
+- GitHub Pages hosting
 
 ## Project Structure
 ```
 vora.shop.live/
-├── index.html          # Main HTML (entry point for GitHub Pages)
+├── index.html          # Main HTML (mobile-first)
 ├── css/
 │   └── style.css       # All styles
 ├── js/
-│   ├── app.js          # Logic (filters, sorting, rendering)
+│   ├── app.js          # Rendering and filtering logic
 │   └── deals.js        # Product data array
-├── assets/
-│   └── images/         # Future: local images
+├── assets/images/      # Future: local images
 ├── docs/               # Documentation
-├── AGENTS.md           # AI context (read by opencode)
+├── AGENTS.md           # AI context
 ├── CHANGELOG.md        # Version history
 ├── README.md
-├── .gitignore
+├── skills.md           # Workflow templates
 └── LICENSE
 ```
 
-## Product Data Structure (in js/deals.js)
-Each product has: id, title, price, originalPrice, discount, image, category, store, affiliateLink, badge
+## Product Data Structure (js/deals.js)
+```javascript
+{
+    id: 1,
+    title: "Product Name",
+    image: "https://...",
+    store: "Amazon.in",      // or "Flipkart"
+    url: "affiliate-link",
+    currentPrice: 599,
+    originalPrice: 999,
+    votes: 89,               // Higher = shows higher in list
+    category: "home",        // tech, home, or fashion
+    badge: "Bestseller"      // optional: Bestseller, Hot, New, Trending
+}
+```
 
 ## Current Features
-- Filter by category (All, Tech, Home, Fashion)
-- Filter by price range (Under ₹500, ₹1000, ₹2000)
-- Filter by store (Amazon, Flipkart)
-- Sort by Featured, Price Low-High, Price High-Low
-- Affiliate link tracking
+- Mobile-first single column layout
+- Quick category filters (All, Tech, Home, Fashion)
+- Trust-building social proof section
+- Verified product badges
+- Star ratings and vote counts
+- Fixed footer with Instagram CTA
+
+## Design Goals
+- Trust building for customers
+- Easy one-thumb navigation
+- Fast loading for mobile
+- Direct to purchase (Amazon/Flipkart links)
 
 ## GitHub Pages
 - Repository: https://github.com/yeshk97/vora.shop.live
-- Live site: https://yeshk97.github.io/vora.shop.live/
+- Live: https://yeshk97.github.io/vora.shop.live/
+- Custom domain: shop.vora.live (redirect)
 
 ## Git Workflow
-1. Make changes locally
-2. `git add .`
-3. `git commit -m "description"`
-4. `git push`
-5. Auto-deploys to GitHub Pages (2-3 min)
+1. `git add .`
+2. `git commit -m "description"`
+3. `git push`
+4. Wait 2-3 min for deployment
 
-## Future Plans (TODO)
-- [ ] Add more products to deals.js
-- [ ] Improve mobile responsiveness
-- [ ] Add product detail pages
+## TODO
+- [ ] Add real affiliate links to products
+- [ ] Add more products
 - [ ] Newsletter signup
-- [ ] Social sharing features
-- [ ] Analytics integration
+- [ ] Analytics (Google Analytics/Plausible)
