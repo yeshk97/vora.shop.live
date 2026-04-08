@@ -33,7 +33,6 @@ function renderProducts(products) {
     }
 
     container.innerHTML = products.map(product => {
-        const store = product.store === 'Amazon.in' ? 'Amazon' : 'Flipkart';
         const discount = calculateDiscount(product.currentPrice, product.originalPrice);
         const badgeColor = getBadgeColor(product.badge);
         
@@ -47,9 +46,6 @@ function renderProducts(products) {
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">${product.title}</h3>
-                        <div class="product-meta">
-                            <span class="product-store">${store}</span>
-                        </div>
                         <div class="product-bottom">
                             <span class="product-price">${formatPrice(product.currentPrice)}</span>
                             <span class="product-btn">View</span>
@@ -124,7 +120,6 @@ function showToast(message) {
 
 function openModal(product) {
     const discount = calculateDiscount(product.currentPrice, product.originalPrice);
-    const store = product.store === 'Amazon.in' ? 'Amazon' : 'Flipkart';
     const badgeColor = getBadgeColor(product.badge);
     
     const modal = document.createElement('div');
@@ -137,7 +132,6 @@ function openModal(product) {
             ${product.badge ? `<span class="modal-badge" style="background:${badgeColor}">${product.badge}</span>` : ''}
             <h2 class="modal-title">${product.title}</h2>
             <div class="modal-meta">
-                <span class="modal-store">${store}</span>
                 ${discount ? `<span class="modal-discount">${discount}% off</span>` : ''}
             </div>
             <div class="modal-price">
