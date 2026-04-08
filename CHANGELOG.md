@@ -2,6 +2,21 @@
 
 All notable changes to this project.
 
+## [3.0.0] - 2026-04-07
+### Added
+- Professional redesign with Plus Jakarta Sans font
+- Purple gradient accent (#667eea → #764ba2)
+- "Curated" tag badge
+- Handpicked Products label
+- Store shown as pill badge
+
+### Changed
+- Simplified to ultra-clean layout
+- Removed discount prices (just current price)
+- Name changed to "VORA Finds"
+- Removed trust badges and FAQ
+- Mobile-first, one-tap-to-buy design
+
 ## [2.0.0] - 2026-04-07
 ### Added
 - Complete mobile-first redesign
@@ -9,12 +24,12 @@ All notable changes to this project.
 - "Why Trust VORA?" section
 - Verified product badges
 - Star ratings and vote counts
-- Social proof bar (12K followers, 4.8★ rating, 2.5K+ buyers)
+- Social proof bar
 - Instagram gradient follow button
 - Fixed footer with Instagram CTA
 
 ### Changed
-- Simplified from complex filters to quick category chips
+- Simplified filters to quick category chips
 - Removed sidebar, single-column mobile layout
 - Optimized for Instagram bio traffic
 
