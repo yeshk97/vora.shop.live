@@ -23,10 +23,15 @@
                 <span class="logo">VORA Finds</span>
                 <span class="logo-tag">Curated</span>
             </div>
-            <a href="https://instagram.com/vora.finds" target="_blank" class="ig-link">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                @vora.finds
-            </a>
+            <div class="header-actions">
+                <button class="header-btn" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                </button>
+                <a href="https://instagram.com/vora.finds" target="_blank" class="ig-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    @vora.finds
+                </a>
+            </div>
         </div>
     </header>
 
@@ -36,6 +41,17 @@
             <h1 class="hero-title">Aesthetic Finds</h1>
             <p class="hero-subtitle">From Amazon and Flipkart</p>
         </section>
+
+        <div class="search-bar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="text" id="search" placeholder="Search products...">
+        </div>
+
+        <div class="sort-bar">
+            <button class="sort-btn active" data-sort="popular">Popular</button>
+            <button class="sort-btn" data-sort="price-low">Low to High</button>
+            <button class="sort-btn" data-sort="price-high">High to Low</button>
+        </div>
 
         <nav class="filters">
             <button class="filter active" data-filter="all">All</button>
