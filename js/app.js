@@ -65,6 +65,8 @@ function filterProducts() {
         filtered.sort((a, b) => b.votes - a.votes);
     } else if (currentSort === 'price-low') {
         filtered.sort((a, b) => a.currentPrice - b.currentPrice);
+    } else if (currentSort === 'price-high') {
+        filtered.sort((a, b) => b.currentPrice - a.currentPrice);
     }
     
     return filtered;
