@@ -19,9 +19,7 @@ function getBadgeColor(badge) {
     return colors[badge] || '#667eea';
 }
 
-let currentFilter = 'all';
 let currentSort = 'popular';
-let searchQuery = '';
 
 function renderProducts(products) {
     const container = document.getElementById('products');
@@ -61,24 +59,12 @@ function renderProducts(products) {
 }
 
 function filterProducts() {
-    let filtered = currentFilter === 'all' 
-        ? [...deals] 
-        : deals.filter(p => p.category === currentFilter);
-    
-    if (searchQuery) {
-        const query = searchQuery.toLowerCase();
-        filtered = filtered.filter(p => 
-            p.title.toLowerCase().includes(query) || 
-            p.category.toLowerCase().includes(query)
-        );
-    }
+    let filtered = [...deals];
     
     if (currentSort === 'popular') {
         filtered.sort((a, b) => b.votes - a.votes);
     } else if (currentSort === 'price-low') {
         filtered.sort((a, b) => a.currentPrice - b.currentPrice);
-    } else if (currentSort === 'price-high') {
-        filtered.sort((a, b) => b.currentPrice - a.currentPrice);
     }
     
     return filtered;
@@ -156,15 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     renderProducts(filterProducts());
 
-    document.querySelectorAll('.filter').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            currentFilter = btn.dataset.filter;
-            renderProducts(filterProducts());
-        });
-    });
-
     document.querySelectorAll('.sort-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
@@ -173,14 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
             renderProducts(filterProducts());
         });
     });
-
-    const searchInput = document.getElementById('search');
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-            searchQuery = e.target.value;
-            renderProducts(filterProducts());
-        });
-    }
 
     const darkModeBtn = document.getElementById('dark-mode-toggle');
     if (darkModeBtn) {
