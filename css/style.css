@@ -143,7 +143,55 @@ body.dark-mode .header-btn:hover {
 
 .hero {
     text-align: center;
-    padding: 48px 0 32px;
+    padding: 60px 0 40px;
+}
+
+.hero-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #667eea;
+    margin-bottom: 16px;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.6px;
+    margin-bottom: 14px;
+    color: var(--text);
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    color: var(--text-light);
+}
+
+.search-bar {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 16px 20px 16px 48px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 15px;
+    background: var(--card-bg);
+    color: var(--text);
+    transition: all 0.2s;
+    box-shadow: var(--shadow);
+}
+
+.sort-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
 }
 
 .hero-label {
@@ -235,12 +283,57 @@ body.dark-mode .header-btn:hover {
 
 .filters {
     display: flex;
-    gap: 8px;
-    margin-bottom: 28px;
+    gap: 10px;
+    margin-bottom: 32px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+.filters::-webkit-scrollbar {
+    display: none;
+}
+
+.filter {
+    flex-shrink: 0;
+    padding: 12px 24px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: var(--shadow);
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.product-card {
+    position: relative;
+}
+
+.product {
+    display: flex;
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--border);
+}
+
+.product:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
 }
 
 .filters::-webkit-scrollbar {
