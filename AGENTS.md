@@ -1,7 +1,7 @@
 # VORA Finds - Project Context
 
 ## Project Overview
-An affiliate deals aggregator for Instagram traffic. Mobile-first site showcasing curated aesthetic products (under Rs 1000) from Amazon and Flipkart. Optimized for bio links.
+An affiliate deals aggregator for Instagram traffic. Mobile-first site showcasing curated aesthetic products from Amazon and Flipkart. Optimized for bio links.
 
 **Brand Name:** VORA Finds
 **Instagram:** @vora.finds

@@ -137,5 +137,75 @@ const deals = [
         votes: 203,
         category: "tech",
         badge: "Hot"
+    },
+    {
+        id: 13,
+        title: "ELACCENT Retro Time Lamp Humidifier",
+        image: "https://m.media-amazon.com/images/I/41dFDUV4kjL._SX342_SY445_QL70_ML2_.jpg",
+        store: "Amazon.in",
+        url: "https://amazon.in",
+        currentPrice: 3921,
+        originalPrice: 10300,
+        votes: 50,
+        category: "home",
+        badge: "New"
+    },
+    {
+        id: 14,
+        title: "MIXEN LED Floor Lamp RGB",
+        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&h=400&fit=crop",
+        store: "Amazon.in",
+        url: "https://amazon.in",
+        currentPrice: 2499,
+        originalPrice: 4999,
+        votes: 45,
+        category: "home",
+        badge: "Trending"
+    },
+    {
+        id: 15,
+        title: "Form & Hue 3D Printed Table Lamp",
+        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&h=400&fit=crop",
+        store: "Amazon.in",
+        url: "https://amazon.in",
+        currentPrice: 899,
+        originalPrice: 1799,
+        votes: 38,
+        category: "home"
+    },
+    {
+        id: 16,
+        title: "Jumix RGB Corner Floor Lamp",
+        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&h=400&fit=crop",
+        store: "Amazon.in",
+        url: "https://amazon.in",
+        currentPrice: 3299,
+        originalPrice: 6499,
+        votes: 42,
+        category: "home",
+        badge: "Hot"
+    },
+    {
+        id: 17,
+        title: "Pesca Celestial Ball Night Lamp",
+        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&h=400&fit=crop",
+        store: "Flipkart",
+        url: "https://flipkart.com",
+        currentPrice: 599,
+        originalPrice: 1199,
+        votes: 55,
+        category: "home",
+        badge: "New"
+    },
+    {
+        id: 18,
+        title: "Philips Hue Adore Smart Ceiling Light",
+        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&h=400&fit=crop",
+        store: "Flipkart",
+        url: "https://flipkart.com",
+        currentPrice: 4599,
+        originalPrice: 6999,
+        votes: 30,
+        category: "home"
     }
 ];
